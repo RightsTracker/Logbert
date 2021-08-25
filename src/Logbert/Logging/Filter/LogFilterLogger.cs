@@ -79,8 +79,8 @@ namespace Couchcoding.Logbert.Logging.Filter
       }
 
       return mRecursive 
-        ? value.Logger.StartsWith(mFilterPath) 
-        : Equals(value.Logger, mFilterPath);
+        ? value.Logger.ToLower().StartsWith(mFilterPath.ToLower()) 
+        : Equals(value.Logger.ToLower(), mFilterPath.ToLower());
     }
 
     #endregion

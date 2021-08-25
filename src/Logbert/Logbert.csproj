@@ -690,6 +690,13 @@
     <None Include="Resources\logbert.about.png" />
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Couchcoding.Logbert.Gui\Couchcoding.Logbert.Gui.csproj">
       <Project>{0d9d135f-9d7a-4d90-8810-903450fd4245}</Project>
       <Name>Couchcoding.Logbert.Gui</Name>
@@ -698,13 +705,6 @@
       <Project>{de30d0ed-e29f-4779-a057-c7c1f1ef4f59}</Project>
       <Name>Couchcoding.Logbert.Theme</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
